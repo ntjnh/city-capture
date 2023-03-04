@@ -1,0 +1,25 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$display-font: 'DM Serif Display', serif;
+$body-font: 'Inter', sans-serif;
+$black: #222;
+
+body {
+    color: $black;
+    font-family: $body-font;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $display-font;
+}
+
+img {
+    width: 150px;
+}
