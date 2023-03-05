@@ -25,5 +25,34 @@ h6 {
 }
 
 img {
-    width: 150px;
+    max-width: 100%;
+}
+
+.gallery {
+    padding-bottom: 3rem;
+}
+
+$continents: africa, asia, australasia, europe, north-america, south-america;
+
+@each $cont in $continents {
+    .#{$cont} {
+        margin-bottom: 8px;
+    }
+}
+
+.photo {
+    position: relative;
+    
+    .caption {
+        background-color: rgba($green, .7);
+        color: $black;
+        font-size: .75rem;
+        font-weight: 700;
+        padding: 2px 8px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: right;
+        width: 100%;
+    }
 }
