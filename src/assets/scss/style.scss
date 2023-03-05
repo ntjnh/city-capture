@@ -3,6 +3,10 @@
 $display-font: 'DM Serif Display', serif;
 $body-font: 'Inter', sans-serif;
 $black: #222;
+$green: #6bffaf;
+
+@import "partials/filter";
+@import "partials/header";
 
 body {
     color: $black;
