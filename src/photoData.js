@@ -2,6 +2,7 @@ export default [
     {
         "id": "dnPXORQYfjM",
         "city": "Amsterdam, Netherlands",
+        "continent": "europe",
         "photo": "amsterdam.jpg",
         "source": "https://unsplash.com/photos/dnPXORQYfjM",
         "photographer": {
@@ -12,6 +13,7 @@ export default [
     {
         "id": "-xsFKKYt62U",
         "city": "Atlanta, Georgia, USA",
+        "continent": "north-america",
         "photo": "atlanta.jpg",
         "source": "https://unsplash.com/photos/-xsFKKYt62U",
         "photographer": {
@@ -22,6 +24,7 @@ export default [
     {
         "id": "3Y4XcI0LUAw",
         "city": "Auckland, New Zealand",
+        "continent": "australasia",
         "photo": "auckland.jpg",
         "source": "https://unsplash.com/photos/3Y4XcI0LUAw",
         "photographer": {
@@ -32,6 +35,7 @@ export default [
     {
         "id": "P3yyNuNY8n0",
         "city": "Barcelona, Spain",
+        "continent": "europe",
         "photo": "barcelona.jpg",
         "source": "https://unsplash.com/photos/P3yyNuNY8n0",
         "photographer": {
@@ -42,6 +46,7 @@ export default [
     {
         "id": "xAkCM1tbUhY",
         "city": "Bangkok, Thailand",
+        "continent": "asia",
         "photo": "bangkok.jpg",
         "source": "https://unsplash.com/photos/xAkCM1tbUhY",
         "photographer": {
@@ -52,6 +57,7 @@ export default [
     {
         "id": "JEM04niPocM",
         "city": "Beijing, China",
+        "continent": "asia",
         "photo": "beijing.jpg",
         "source": "https://unsplash.com/photos/JEM04niPocM",
         "photographer": {
@@ -62,6 +68,7 @@ export default [
     {
         "id": "gTX7loRSKlQ",
         "city": "Berlin, Germany",
+        "continent": "europe",
         "photo": "berlin.jpg",
         "source": "https://unsplash.com/photos/gTX7loRSKlQ",
         "photographer": {
@@ -72,6 +79,7 @@ export default [
     {
         "id": "gJaegQ4MZZA",
         "city": "Budapest, Hungary",
+        "continent": "europe",
         "photo": "budapest.jpg",
         "source": "https://unsplash.com/photos/gJaegQ4MZZA",
         "photographer": {
@@ -82,6 +90,7 @@ export default [
     {
         "id": "",
         "city": "Cape Town, South Africa",
+        "continent": "africa",
         "photo": "cape-town.jpg",
         "source": "https://unsplash.com/photos/ZJynHsypwnI",
         "photographer": {
@@ -92,6 +101,7 @@ export default [
     {
         "id": "2EszXp-o_oY",
         "city": "Hamburg, Germany",
+        "continent": "europe",
         "photo": "hamburg.jpg",
         "source": "https://unsplash.com/photos/2EszXp-o_oY",
         "photographer": {
@@ -102,6 +112,7 @@ export default [
     {
         "id": "L6TZXoBg6-E",
         "city": "Honolulu, Hawaii, USA",
+        "continent": "north-america",
         "photo": "honolulu.jpg",
         "source": "https://unsplash.com/photos/L6TZXoBg6-E",
         "photographer": {
@@ -112,6 +123,7 @@ export default [
     {
         "id": "mtr8oRtXjmM",
         "city": "Lisbon, Portugal",
+        "continent": "europe",
         "photo": "lisbon.jpg",
         "source": "https://unsplash.com/photos/mtr8oRtXjmM",
         "photographer": {
@@ -122,6 +134,7 @@ export default [
     {
         "id": "vkvk6zSQyKs",
         "city": "London, United Kingdom",
+        "continent": "europe",
         "photo": "london.jpg",
         "source": "https://unsplash.com/photos/vkvk6zSQyKs",
         "photographer": {
@@ -132,6 +145,7 @@ export default [
     {
         "id": "Kufw32YcYGA",
         "city": "Oslo, Norway",
+        "continent": "europe",
         "photo": "oslo.jpg",
         "source": "https://unsplash.com/photos/Kufw32YcYGA",
         "photographer": {
@@ -142,6 +156,7 @@ export default [
     {
         "id": "UO02gAW3c0c",
         "city": "Paris, France",
+        "continent": "europe",
         "photo": "paris.jpg",
         "source": "https://unsplash.com/photos/UO02gAW3c0c",
         "photographer": {
@@ -152,6 +167,7 @@ export default [
     {
         "id": "4CMq1GxDSPA",
         "city": "Tokyo, Japan",
+        "continent": "asia",
         "photo": "tokyo.jpg",
         "source": "https://unsplash.com/photos/4CMq1GxDSPA",
         "photographer": {
@@ -162,6 +178,7 @@ export default [
     {
         "id": "GOqiZ8__bJ4",
         "city": "Toronto, Canada",
+        "continent": "north-america",
         "photo": "toronto.jpg",
         "source": "https://unsplash.com/photos/GOqiZ8__bJ4",
         "photographer": {
@@ -172,6 +189,7 @@ export default [
     {
         "id": "x5icsOgc7Lw",
         "city": "Vienna, Austria",
+        "continent": "europe",
         "photo": "vienna.jpg",
         "source": "https://unsplash.com/photos/x5icsOgc7Lw",
         "photographer": {
@@ -182,6 +200,7 @@ export default [
     {
         "id": "nHNHPvk544s",
         "city": "Zürich, Switzerland",
+        "continent": "europe",
         "photo": "zurich.jpg",
         "source": "https://unsplash.com/photos/nHNHPvk544s",
         "photographer": {
