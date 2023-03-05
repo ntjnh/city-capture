@@ -3,8 +3,11 @@ import Filter from './components/Filter'
 import Gallery from './components/Gallery'
 import Header from './components/Header'
 import Modal from './components/Modal'
+import reloadMsnry from './msnry'
 
 function App() {
+  reloadMsnry()
+
   return (
     <div className="App">
       <Header />
