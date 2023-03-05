@@ -1,0 +1,49 @@
+.Filter {
+    padding: 2rem 0 1.5rem;
+
+    .row {
+        align-items: center;
+    }
+
+    .filter-info p {
+        margin: 0;
+    }
+
+    .filter-button {
+        background-color: $green;
+        border: none;
+        color: $black;
+        padding: .5rem 1rem;
+    }
+
+    .continent-menu {
+        display: none;
+
+        .options {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+
+            li {
+                display: inline-block;
+
+                &:last-child {
+                    a {
+                        padding-right: 0;
+                    }
+                }
+
+                a {
+                    display: inline-block;
+                    padding: .75rem 1rem;
+                    text-decoration: none;
+
+                    &.active {
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}
