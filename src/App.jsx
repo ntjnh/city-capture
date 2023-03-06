@@ -6,7 +6,9 @@ import Modal from './components/Modal'
 import reloadMsnry from './msnry'
 
 function App() {
-  reloadMsnry()
+  // Call function after 5 seconds when .grid div is in the DOM
+  // I'll fix this when I learn how to do it properly
+  setTimeout(reloadMsnry, 3000)
 
   return (
     <div className="App">
