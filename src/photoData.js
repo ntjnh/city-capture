@@ -88,7 +88,7 @@ export default [
         }
     },
     {
-        "id": "",
+        "id": "ZJynHsypwnI",
         "city": "Cape Town, South Africa",
         "continent": "africa",
         "photo": "cape-town.jpg",
