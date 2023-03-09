@@ -2,7 +2,16 @@ import photoData from '../photoData'
 import Photo from './Photo'
 
 export default function Gallery() {
-    const photos = photoData.map(photo => <Photo id={photo.id} city={photo.city} continent={photo.continent} />)
+    const photos = photoData.map(photo => {
+        return (
+            <Photo 
+                id={photo.id}
+                city={photo.city}
+                continent={photo.continent}
+                photographer={photo.photographer.name}
+            />
+        )
+    })
 
     return (
         <div className="gallery container">
