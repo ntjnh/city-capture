@@ -77,6 +77,17 @@ export default [
         }
     },
     {
+        "id": "5v8ByU6L4s0",
+        "city": "Boston, Massachusetts, USA",
+        "continent": "north-america",
+        "photo": "boston.jpg",
+        "source": "https://unsplash.com/photos/5v8ByU6L4s0",
+        "photographer": {
+            "name": "Clifford",
+            "profile": "https://unsplash.com/@cyzx"
+        }
+    },
+    {
         "id": "gJaegQ4MZZA",
         "city": "Budapest, Hungary",
         "continent": "europe",
@@ -96,6 +107,17 @@ export default [
         "photographer": {
             "name": "Karabo Mdluli",
             "profile": "https://unsplash.com/@kxrabo"
+        }
+    },
+    {
+        "id": "nApljhT9kfM",
+        "city": "Chicago, Illinois, USA",
+        "continent": "north-america",
+        "photo": "chicago.jpg",
+        "source": "https://unsplash.com/photos/nApljhT9kfM",
+        "photographer": {
+            "name": "Patrick Tomasso",
+            "profile": "https://unsplash.com/@impatrickt"
         }
     },
     {
@@ -154,6 +176,17 @@ export default [
         }
     },
     {
+        "id": "2KIDkMzmO-k",
+        "city": "Los Angeles, California, USA",
+        "continent": "north-america",
+        "photo": "los-angeles.jpg",
+        "source": "https://unsplash.com/photos/2KIDkMzmO-k",
+        "photographer": {
+            "name": "Alexis Balinoff",
+            "profile": "https://unsplash.com/@alexisbalinoff"
+        }
+    },
+    {
         "id": "tYzVt_coZ_c",
         "city": "Miami, Florida, USA",
         "continent": "north-america",
@@ -173,6 +206,17 @@ export default [
         "photographer": {
             "name": "Yash Bhardwaj",
             "profile": "https://unsplash.com/@ybhrdwj"
+        }
+    },
+    {
+        "id": "WbbVwVPD2ZM",
+        "city": "Nashville, Tennessee, USA",
+        "continent": "north-america",
+        "photo": "nashville.jpg",
+        "source": "https://unsplash.com/photos/WbbVwVPD2ZM",
+        "photographer": {
+            "name": "Drew Hays",
+            "profile": "https://unsplash.com/@drew_hays"
         }
     },
     {
