@@ -121,6 +121,17 @@ export default [
         }
     },
     {
+        "id": "eEGIkW8ddE8",
+        "city": "Jakarta, Indonesia",
+        "continent": "asia",
+        "photo": "jakarta.jpg",
+        "source": "https://unsplash.com/photos/eEGIkW8ddE8",
+        "photographer": {
+            "name": "Yulia Agnis",
+            "profile": "https://unsplash.com/@agnisyulia"
+        }
+    },
+    {
         "id": "mtr8oRtXjmM",
         "city": "Lisbon, Portugal",
         "continent": "europe",
@@ -143,6 +154,39 @@ export default [
         }
     },
     {
+        "id": "tYzVt_coZ_c",
+        "city": "Miami, Florida, USA",
+        "continent": "north-america",
+        "photo": "miami.jpg",
+        "source": "https://unsplash.com/photos/tYzVt_coZ_c",
+        "photographer": {
+            "name": "Colin Lloyd",
+            "profile": "https://unsplash.com/@onthesearchforpineapples"
+        }
+    },
+    {
+        "id": "6ekmoL5FUvk",
+        "city": "Mumbai, India",
+        "continent": "asia",
+        "photo": "mumbai.jpg",
+        "source": "https://unsplash.com/photos/6ekmoL5FUvk",
+        "photographer": {
+            "name": "Yash Bhardwaj",
+            "profile": "https://unsplash.com/@ybhrdwj"
+        }
+    },
+    {
+        "id": "JMPHVJYpKYA",
+        "city": "Osaka, Japan",
+        "continent": "asia",
+        "photo": "osaka.jpg",
+        "source": "https://unsplash.com/photos/JMPHVJYpKYA",
+        "photographer": {
+            "name": "Hyunwon Jang",
+            "profile": "https://unsplash.com/@hyunwonjang"
+        }
+    },
+    {
         "id": "Kufw32YcYGA",
         "city": "Oslo, Norway",
         "continent": "europe",
@@ -162,6 +206,39 @@ export default [
         "photographer": {
             "name": "John Towner",
             "profile": "https://unsplash.com/@heytowner"
+        }
+    },
+    {
+        "id": "XuLwNcyz-2Q",
+        "city": "Reykjavik, Iceland",
+        "continent": "europe",
+        "photo": "reykjavik.jpg",
+        "source": "https://unsplash.com/photos/XuLwNcyz-2Q",
+        "photographer": {
+            "name": "Jansen A.",
+            "profile": "https://unsplash.com/@real_jansen"
+        }
+    },
+    {
+        "id": "QYI__0vehUs",
+        "city": "Stockholm, Sweden",
+        "continent": "europe",
+        "photo": "stockholm.jpg",
+        "source": "https://unsplash.com/photos/QYI__0vehUs",
+        "photographer": {
+            "name": "Linus Mimietz",
+            "profile": "https://unsplash.com/@linusmimietz"
+        }
+    },
+    {
+        "id": "nwK_i2czMg4",
+        "city": "Sydney, Australia",
+        "continent": "australasia",
+        "photo": "sydney.jpg",
+        "source": "https://unsplash.com/photos/nwK_i2czMg4",
+        "photographer": {
+            "name": "Wayne Yao",
+            "profile": "https://unsplash.com/@wayneyao"
         }
     },
     {
@@ -206,6 +283,17 @@ export default [
         "photographer": {
             "name": "Rico Reutimann",
             "profile": "https://unsplash.com/@ricoreu"
+        }
+    },
+    {
+        "id": "",
+        "city": "",
+        "continent": "europe",
+        "photo": ".jpg",
+        "source": "",
+        "photographer": {
+            "name": "",
+            "profile": ""
         }
     },
 ]
