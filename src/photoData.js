@@ -99,6 +99,17 @@ export default [
         }
     },
     {
+        "id": "GlSIb1OiAtI",
+        "city": "Cairo, Egypt",
+        "continent": "africa",
+        "photo": "cairo.jpg",
+        "source": "https://unsplash.com/photos/GlSIb1OiAtI",
+        "photographer": {
+            "name": "Spencer Davis",
+            "profile": "https://unsplash.com/@spencerdavis"
+        }
+    },
+    {
         "id": "ZJynHsypwnI",
         "city": "Cape Town, South Africa",
         "continent": "africa",
@@ -121,6 +132,17 @@ export default [
         }
     },
     {
+        "id": "aB2EUX8_Lkg",
+        "city": "Copenhagen, Denmark",
+        "continent": "europe",
+        "photo": "copenhagen.jpg",
+        "source": "https://unsplash.com/photos/aB2EUX8_Lkg",
+        "photographer": {
+            "name": "Jacob Buchhave",
+            "profile": "https://unsplash.com/@jacobbuchhave"
+        }
+    },
+    {
         "id": "2EszXp-o_oY",
         "city": "Hamburg, Germany",
         "continent": "europe",
@@ -129,6 +151,17 @@ export default [
         "photographer": {
             "name": "Patrick Rosenkranz",
             "profile": "https://unsplash.com/@pazzero"
+        }
+    },
+    {
+        "id": "r5Xd-F2st9w",
+        "city": "Hong Kong, China",
+        "continent": "asia",
+        "photo": "hong-kong.jpg",
+        "source": "https://unsplash.com/photos/r5Xd-F2st9w",
+        "photographer": {
+            "name": "Joel Fulgencio",
+            "profile": "https://unsplash.com/@joelft"
         }
     },
     {
