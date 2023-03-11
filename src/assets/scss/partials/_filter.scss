@@ -49,3 +49,47 @@
         }
     }
 }
+
+@keyframes slide-in {
+    0% {
+        right: -1320px;
+    }
+
+    25% {
+        right: -990px;
+    }
+
+    50% {
+        right: -660px;
+    }
+
+    75% {
+        right: -330px;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        right: 0;
+    }
+
+    25% {
+        right: -330px;
+    }
+
+    50% {
+        right: -660px;
+    }
+
+    75% {
+        right: -990px;
+    }
+
+    100% {
+        right: -1320px;
+    }
+}
