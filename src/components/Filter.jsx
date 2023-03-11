@@ -1,14 +1,29 @@
 export default function Filter() {
+    function toggleOptions() {
+        const options = document.getElementsByClassName("continent-menu")[0]
+
+        // If neither class is there, add slide-in otherwise toggle one or the other
+        if (!options.classList.contains("slide-out") && !options.classList.contains("slide-in")) {
+            options.classList.add("slide-in")
+        } else if (options.classList.contains("slide-out")) {
+            options.classList.remove("slide-out")
+            options.classList.add("slide-in")
+        } else {
+            options.classList.remove("slide-in")
+            options.classList.add("slide-out")
+        }
+    }
+
     return (
         <div className="Filter">
             <div className="container">
-                <div className="row">
-                    <div className="col-4 filter-info">
+                <div className="row position-relative">
+                    <div className="col-4 bg-white filter-info">
                         <p>Currently showing: <span id="current">All</span></p>
                     </div>
 
-                    <div className="col-8">
-                        <button className="filter-button" id="filter-button">Filter</button>
+                    <div className="col-8 bg-white">
+                        <button className="filter-button" onClick={toggleOptions}>Filter</button>
                     </div>
 
                     <div className="col-12 continent-menu">
