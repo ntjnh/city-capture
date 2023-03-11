@@ -220,6 +220,28 @@ export default [
         }
     },
     {
+        "id": "2qVaLguJ3rk",
+        "city": "Lyon, France",
+        "continent": "europe",
+        "photo": "lyon.jpg",
+        "source": "https://unsplash.com/photos/2qVaLguJ3rk",
+        "photographer": {
+            "name": "Bastien Nvs",
+            "profile": "https://unsplash.com/@bastien_nvs"
+        }
+    },
+    {
+        "id": "zzAxXXfvV8g",
+        "city": "Marrakech, Morocco",
+        "continent": "africa",
+        "photo": "marrakech.jpg",
+        "source": "https://unsplash.com/photos/zzAxXXfvV8g",
+        "photographer": {
+            "name": "Thiago Rocha",
+            "profile": "https://unsplash.com/@thiagorocha5"
+        }
+    },
+    {
         "id": "tYzVt_coZ_c",
         "city": "Miami, Florida, USA",
         "continent": "north-america",
@@ -228,6 +250,28 @@ export default [
         "photographer": {
             "name": "Colin Lloyd",
             "profile": "https://unsplash.com/@onthesearchforpineapples"
+        }
+    },
+    {
+        "id": "KREFGHYCifo",
+        "city": "Milan, Italy",
+        "continent": "europe",
+        "photo": "milan.jpg",
+        "source": "https://unsplash.com/photos/KREFGHYCifo",
+        "photographer": {
+            "name": "Szymon Fischer",
+            "profile": "https://unsplash.com/@mrsimonfischer"
+        }
+    },
+    {
+        "id": "Kb5-g0LTZxg",
+        "city": "Montreal, Quebec, Canada",
+        "continent": "north-america",
+        "photo": "montreal.jpg",
+        "source": "https://unsplash.com/photos/Kb5-g0LTZxg",
+        "photographer": {
+            "name": "Etienne Delorieux",
+            "profile": "https://unsplash.com/@etiennedelorieux"
         }
     },
     {
@@ -360,17 +404,6 @@ export default [
         "photographer": {
             "name": "Rico Reutimann",
             "profile": "https://unsplash.com/@ricoreu"
-        }
-    },
-    {
-        "id": "",
-        "city": "",
-        "continent": "europe",
-        "photo": ".jpg",
-        "source": "",
-        "photographer": {
-            "name": "",
-            "profile": ""
         }
     },
 ]
