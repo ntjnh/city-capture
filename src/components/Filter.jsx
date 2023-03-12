@@ -14,6 +14,16 @@ export default function Filter() {
         }
     }
 
+    function filterCities(e) {
+        e.preventDefault()
+
+        let options = document.querySelectorAll(".options li a");
+        [...options].map(option => option.classList.remove("active"))
+
+        const clicked = e.target
+        clicked.classList.add("active")
+    }
+
     return (
         <div className="Filter">
             <div className="container">
@@ -28,13 +38,13 @@ export default function Filter() {
 
                     <div className="col-12 continent-menu">
                         <ul className="options">
-                            <li><a className="active" id="all" href="#">All</a></li>
-                            <li><a id="africa" href="#">Africa</a></li>
-                            <li><a id="asia" href="#">Asia</a></li>
-                            <li><a id="australasia" href="#">Australasia</a></li>
-                            <li><a id="europe" href="#">Europe</a></li>
-                            <li><a id="n-america" href="#">North America</a></li>
-                            <li><a id="s-america" href="#">South America</a></li>
+                            <li><a className="active" id="all" href="#" onClick={filterCities}>All</a></li>
+                            <li><a id="africa" href="#" onClick={filterCities}>Africa</a></li>
+                            <li><a id="asia" href="#" onClick={filterCities}>Asia</a></li>
+                            <li><a id="australasia" href="#" onClick={filterCities}>Australasia</a></li>
+                            <li><a id="europe" href="#" onClick={filterCities}>Europe</a></li>
+                            <li><a id="n-america" href="#" onClick={filterCities}>North America</a></li>
+                            <li><a id="s-america" href="#" onClick={filterCities}>South America</a></li>
                         </ul>
                     </div>
                 </div>
