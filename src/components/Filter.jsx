@@ -6,11 +6,9 @@ export default function Filter() {
         if (!options.classList.contains("slide-out") && !options.classList.contains("slide-in")) {
             options.classList.add("slide-in")
         } else if (options.classList.contains("slide-out")) {
-            options.classList.remove("slide-out")
-            options.classList.add("slide-in")
+            options.classList.replace("slide-out", "slide-in")
         } else {
-            options.classList.remove("slide-in")
-            options.classList.add("slide-out")
+            options.classList.replace("slide-in", "slide-out")
         }
     }
 
