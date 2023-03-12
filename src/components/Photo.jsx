@@ -2,9 +2,9 @@ export default function Photo(props) {
     return (
         <div className={`grid-item col-6 col-md-4 col-lg-3 all ${props.continent}`}>
             <div className="photo">
-                <a 
+                <a
                     data-alt={props.city}
-                    data-lightbox="cities" 
+                    data-lightbox="all"
                     data-title={`Photo by ${props.photographer}`}
                     href={`https://source.unsplash.com/${props.id}`}
                 >
