@@ -1,3 +1,5 @@
+import reloadMsnry from '../msnry'
+
 export default function Filter() {
     function toggleOptions() {
         const options = document.getElementsByClassName("continent-menu")[0]
@@ -16,10 +18,28 @@ export default function Filter() {
         e.preventDefault()
 
         let options = document.querySelectorAll(".options li a");
-        [...options].map(option => option.classList.remove("active"))
+        [...options].map(option => option.classList.remove("active"));
 
+        // Add active class to the continent that has been clicked
         const clicked = e.target
         clicked.classList.add("active")
+
+        // Get the clicked continent's id 
+        const toShow = clicked.getAttribute('id')
+
+        // Get all cities and loop through them
+        const cities = document.getElementsByClassName("grid-item");
+
+        [...cities].forEach(city => {
+            // Hide all cities not in the selected continent
+            !city.classList.contains(toShow) && city.classList.add('d-none')
+            
+            // Make all cities in selected continent visible again if hidden
+            city.classList.contains(toShow) && city.classList.remove('d-none')
+        });
+
+        // Call Masonry again to reinitialise the layout
+        reloadMsnry()
     }
 
     return (
