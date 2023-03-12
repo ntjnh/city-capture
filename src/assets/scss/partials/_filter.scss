@@ -40,6 +40,7 @@
 
             li {
                 display: inline-block;
+                padding: 0 1rem;
 
                 &:last-child {
                     a {
@@ -48,12 +49,24 @@
                 }
 
                 a {
+                    color: $black;
                     display: inline-block;
-                    padding: .75rem 1rem;
+                    padding: .75rem 0;
                     text-decoration: none;
 
                     &.active {
                         color: $black;
+                        position: relative;
+
+                        &:after {
+                            background-color: $green;
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            width: 100%;
+                            bottom: 4px;
+                            left: 0;
+                        }
                     }
                 }
             }
