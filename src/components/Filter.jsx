@@ -41,8 +41,8 @@ export default function Filter() {
                             <li><a id="asia" href="#" onClick={filterCities}>Asia</a></li>
                             <li><a id="australasia" href="#" onClick={filterCities}>Australasia</a></li>
                             <li><a id="europe" href="#" onClick={filterCities}>Europe</a></li>
-                            <li><a id="n-america" href="#" onClick={filterCities}>North America</a></li>
-                            <li><a id="s-america" href="#" onClick={filterCities}>South America</a></li>
+                            <li><a id="north-america" href="#" onClick={filterCities}>North America</a></li>
+                            <li><a id="south-america" href="#" onClick={filterCities}>South America</a></li>
                         </ul>
                     </div>
                 </div>
