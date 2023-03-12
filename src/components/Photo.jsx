@@ -1,6 +1,6 @@
 export default function Photo(props) {
     return (
-        <div className={`grid-item col-6 col-md-4 col-lg-3 ${props.continent}`}>
+        <div className={`grid-item col-6 col-md-4 col-lg-3 all ${props.continent}`}>
             <div className="photo">
                 <a 
                     data-alt={props.city}
