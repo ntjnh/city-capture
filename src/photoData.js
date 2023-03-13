@@ -77,6 +77,17 @@ export default [
         }
     },
     {
+        "id": "hOql_m6t2W4",
+        "city": "Bogotá, Colombia",
+        "continent": "south-america",
+        "photo": "bogota.jpg",
+        "source": "https://unsplash.com/photos/hOql_m6t2W4",
+        "photographer": {
+            "name": "Adrian Cogua",
+            "profile": "https://unsplash.com/@adriancogua"
+        }
+    },
+    {
         "id": "5v8ByU6L4s0",
         "city": "Boston, Massachusetts, USA",
         "continent": "north-america",
@@ -96,6 +107,17 @@ export default [
         "photographer": {
             "name": "Naomi Suzuki",
             "profile": "https://unsplash.com/@mabotofu"
+        }
+    },
+    {
+        "id": "XyenAtVdDrM",
+        "city": "Buenos Aires, Argentina",
+        "continent": "south-america",
+        "photo": "buenos-aires.jpg",
+        "source": "https://unsplash.com/photos/XyenAtVdDrM",
+        "photographer": {
+            "name": "Nicolás Flor",
+            "profile": "https://unsplash.com/@nicolassflorr"
         }
     },
     {
@@ -187,6 +209,17 @@ export default [
         }
     },
     {
+        "id": "7stPIB_E_EU",
+        "city": "La Paz, Bolivia",
+        "continent": "south-america",
+        "photo": "la-paz.jpg",
+        "source": "https://unsplash.com/photos/7stPIB_E_EU",
+        "photographer": {
+            "name": "Florian Delée",
+            "profile": "https://unsplash.com/@florian_delee"
+        }
+    },
+    {
         "id": "mtr8oRtXjmM",
         "city": "Lisbon, Portugal",
         "continent": "europe",
@@ -264,6 +297,17 @@ export default [
         }
     },
     {
+        "id": "b5JniqWPDOo",
+        "city": "Montevideo, Uruguay",
+        "continent": "south-america",
+        "photo": "montevideo.jpg",
+        "source": "https://unsplash.com/photos/b5JniqWPDOo",
+        "photographer": {
+            "name": "Alexis Magnone",
+            "profile": "https://unsplash.com/@alemagnone"
+        }
+    },
+    {
         "id": "Kb5-g0LTZxg",
         "city": "Montreal, Quebec, Canada",
         "continent": "north-america",
@@ -338,6 +382,28 @@ export default [
         "photographer": {
             "name": "Jansen A.",
             "profile": "https://unsplash.com/@real_jansen"
+        }
+    },
+    {
+        "id": "8tTh9isJoos",
+        "city": "Rio de Janeiro, Brazil",
+        "continent": "south-america",
+        "photo": "rio-de-janeiro.jpg",
+        "source": "https://unsplash.com/photos/8tTh9isJoos",
+        "photographer": {
+            "name": "Krys Amon",
+            "profile": "https://unsplash.com/@krysamon"
+        }
+    },
+    {
+        "id": "dfGpXNm1ioY",
+        "city": "Santiago, Chile",
+        "continent": "south-america",
+        "photo": "santiago.jpg",
+        "source": "https://unsplash.com/photos/dfGpXNm1ioY",
+        "photographer": {
+            "name": "Nathana Rebouças",
+            "profile": "https://unsplash.com/@nathanareboucas"
         }
     },
     {
