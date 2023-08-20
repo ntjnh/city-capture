@@ -1,4 +1,4 @@
-export default [
+[
     {
         "id": "dnPXORQYfjM",
         "city": "Amsterdam, Netherlands",
@@ -471,5 +471,5 @@ export default [
             "name": "Rico Reutimann",
             "profile": "https://unsplash.com/@ricoreu"
         }
-    },
+    }
 ]
