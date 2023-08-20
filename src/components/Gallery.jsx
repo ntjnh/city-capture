@@ -1,4 +1,4 @@
-import photoData from '../photoData'
+import photoData from '../photos.json'
 import Photo from './Photo'
 
 export default function Gallery() {
