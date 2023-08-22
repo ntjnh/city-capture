@@ -1,16 +1,17 @@
+import { useState } from 'react'
 import reloadMsnry from '../msnry'
 
 export default function Filter() {
-    function toggleOptions() {
-        const options = document.getElementsByClassName("continent-menu")[0]
+    const [filterToggleClass, setFilterToggleClass] = useState('')
 
+    function toggleOptions() {
         // If neither class is there, add slide-in otherwise toggle one or the other
-        if (!options.classList.contains("slide-out") && !options.classList.contains("slide-in")) {
-            options.classList.add("slide-in")
-        } else if (options.classList.contains("slide-out")) {
-            options.classList.replace("slide-out", "slide-in")
+        if (filterToggleClass !== 'slide-out' && filterToggleClass !== 'slide-in') {
+            setFilterToggleClass('slide-in')
+        } else if (filterToggleClass === 'slide-out') {
+            setFilterToggleClass('slide-in')
         } else {
-            options.classList.replace("slide-in", "slide-out")
+            setFilterToggleClass('slide-out')
         }
     }
 
@@ -58,7 +59,7 @@ export default function Filter() {
                         <button className="filter-button" onClick={toggleOptions}>Filter</button>
                     </div>
 
-                    <div className="col-12 continent-menu">
+                    <div className={`col-12 continent-menu ${filterToggleClass}`}>
                         <ul className="options">
                             <li><a className="active" id="all" href="#" onClick={filterCities}>All</a></li>
                             <li><a id="africa" href="#" onClick={filterCities}>Africa</a></li>
