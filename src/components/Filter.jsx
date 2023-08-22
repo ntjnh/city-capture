@@ -2,7 +2,20 @@ import { useState } from 'react'
 import reloadMsnry from '../msnry'
 
 export default function Filter() {
+    const continents = ['All', 'Africa', 'Asia', 'Australasia', 'Europe', 'North America', 'South America']
+
     const [filterToggleClass, setFilterToggleClass] = useState('')
+    const [activeCity, setActiveCity] = useState(continents[0])
+
+    const continentOptions = continents.map((continent, i) => {
+        let slug = continent.toLowerCase().replace(' ', '-')
+
+        return (
+            <li key={i}>
+                <a className={activeCity === continent && 'active'} id={slug} onClick={filterCities}>{continent}</a>
+            </li>
+        )
+    })
 
     function toggleOptions() {
         // If neither class is there, add slide-in otherwise toggle one or the other
@@ -18,12 +31,9 @@ export default function Filter() {
     function filterCities(e) {
         e.preventDefault()
 
-        let options = document.querySelectorAll(".options li a");
-        [...options].map(option => option.classList.remove("active"));
+        setActiveCity(e.target.textContent)
 
-        // Add active class to the continent that has been clicked
         const clicked = e.target
-        clicked.classList.add("active")
 
         // Get the clicked continent's id 
         const toShow = clicked.getAttribute('id')
@@ -52,7 +62,7 @@ export default function Filter() {
             <div className="container">
                 <div className="row position-relative">
                     <div className="col-4 bg-white filter-info">
-                        <p>Currently showing: <span id="current">All</span></p>
+                        <p>Currently showing: <span id="current">{activeCity}</span></p>
                     </div>
 
                     <div className="col-8 bg-white">
@@ -61,13 +71,7 @@ export default function Filter() {
 
                     <div className={`col-12 continent-menu ${filterToggleClass}`}>
                         <ul className="options">
-                            <li><a className="active" id="all" href="#" onClick={filterCities}>All</a></li>
-                            <li><a id="africa" href="#" onClick={filterCities}>Africa</a></li>
-                            <li><a id="asia" href="#" onClick={filterCities}>Asia</a></li>
-                            <li><a id="australasia" href="#" onClick={filterCities}>Australasia</a></li>
-                            <li><a id="europe" href="#" onClick={filterCities}>Europe</a></li>
-                            <li><a id="north-america" href="#" onClick={filterCities}>North America</a></li>
-                            <li><a id="south-america" href="#" onClick={filterCities}>South America</a></li>
+                            {continentOptions}
                         </ul>
                     </div>
                 </div>
