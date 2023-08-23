@@ -5,14 +5,14 @@ export default function Filter() {
     const continents = ['All', 'Africa', 'Asia', 'Australasia', 'Europe', 'North America', 'South America']
 
     const [filterToggleClass, setFilterToggleClass] = useState('')
-    const [activeCity, setActiveCity] = useState(continents[0])
+    const [activeContinent, setActiveContinent] = useState(continents[0])
 
     const continentOptions = continents.map((continent, i) => {
         let slug = continent.toLowerCase().replace(' ', '-')
 
         return (
             <li key={i}>
-                <a className={activeCity === continent && 'active'} id={slug} onClick={filterCities}>{continent}</a>
+                <a className={activeContinent === continent ? 'active' : ''} id={slug} onClick={filterCities}>{continent}</a>
             </li>
         )
     })
@@ -31,12 +31,14 @@ export default function Filter() {
     function filterCities(e) {
         e.preventDefault()
 
-        setActiveCity(e.target.textContent)
+        setActiveContinent(e.target.textContent)
 
         const clicked = e.target
 
         // Get the clicked continent's id 
         const toShow = clicked.getAttribute('id')
+
+        console.log(`id: ${toShow}`)
 
         // Get all cities and loop through them
         const cities = document.getElementsByClassName("grid-item");
@@ -62,7 +64,7 @@ export default function Filter() {
             <div className="container">
                 <div className="row position-relative">
                     <div className="col-4 bg-white filter-info">
-                        <p>Currently showing: <span id="current">{activeCity}</span></p>
+                        <p>Currently showing: <span id="current">{activeContinent}</span></p>
                     </div>
 
                     <div className="col-8 bg-white">
