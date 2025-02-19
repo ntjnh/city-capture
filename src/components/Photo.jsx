@@ -1,11 +1,8 @@
 import { useEffect, useState } from 'react'
-const key = ''
-const url = 'https://api.unsplash.com'
-const getSinglePhoto = '/photos/'
-const clientId = `?client_id=${key}`
+const api_key = import.meta.env.VITE_API_KEY
 
 export default function Photo(props) {
-    const endpoint = `${url}${getSinglePhoto}${props.id}${clientId}`
+    const endpoint = `https://api.unsplash.com/photos/${props.id}?client_id=${api_key}`
     const [photoFull, setPhotoFull] = useState('')
     const [photoThumb, setPhotoThumb] = useState('')
 
@@ -34,7 +31,7 @@ export default function Photo(props) {
                     data-title={`Photo by ${props.photographer}`}
                     href={photoFull}
                 >
-                    <img src={`${photoThumb}`} alt={props.city} />
+                    <img src={`${photoThumb}`} alt={`${props.city} photo by ${props.photographer}`} />
                 </a>
 
                 <span className="caption">{props.city}</span>
