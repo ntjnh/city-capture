@@ -11,6 +11,9 @@ $green: #6bffaf;
 body {
     color: $black;
     font-family: $body-font;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
     margin: 0;
     padding: 0;
 }
@@ -22,6 +25,8 @@ h4,
 h5,
 h6 {
     font-family: $display-font;
+    font-weight: 400;
+    font-style: normal;
 }
 
 img {
