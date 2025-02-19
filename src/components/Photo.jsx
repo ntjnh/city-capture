@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-const api_key = import.meta.env.VITE_API_KEY
+const key = import.meta.env.VITE_API_KEY
 
 export default function Photo(props) {
-    const endpoint = `https://api.unsplash.com/photos/${props.id}?client_id=${api_key}`
+    const endpoint = `https://api.unsplash.com/photos/${props.id}?client_id=${key}`
     const [photoFull, setPhotoFull] = useState('')
     const [photoThumb, setPhotoThumb] = useState('')
 
