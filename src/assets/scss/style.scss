@@ -1,4 +1,4 @@
-@import "node_modules/bootstrap/scss/bootstrap";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
 $display-font: 'DM Serif Display', serif;
 $body-font: 'Inter', sans-serif;
@@ -27,6 +27,14 @@ h6 {
     font-family: $display-font;
     font-weight: 400;
     font-style: normal;
+}
+
+.Footer {
+    background-color: $green;
+    font-size: .875rem;
+    margin-top: 3rem;
+    padding: 1rem 1.5rem;
+    text-align: center;
 }
 
 img {

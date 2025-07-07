@@ -36,10 +36,6 @@ export default function Filter() {
             
             // Make all cities in selected continent visible again if hidden
             city.classList.contains(toShow) && city.classList.remove('d-none')
-
-            // Change data-lightbox attribute so that lightbox gallery only contains visible cities
-            const lightboxTrigger = city.querySelector(".grid-item .photo a")
-            city.classList.contains(toShow) && lightboxTrigger.setAttribute('data-lightbox', toShow);
         });
 
         // Call Masonry again to reinitialise the layout
