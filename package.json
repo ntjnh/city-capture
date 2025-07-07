@@ -14,7 +14,8 @@
     "imagesloaded": "^5.0.0",
     "masonry-layout": "^4.2.2",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "yet-another-react-lightbox": "^3.24.0"
   },
   "devDependencies": {
     "@types/react": "^19.1.8",
