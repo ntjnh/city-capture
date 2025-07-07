@@ -27,7 +27,6 @@ export default function Photo(props) {
             <div className="photo">
                 <a
                     data-alt={props.city}
-                    data-lightbox="all"
                     data-title={`Photo by ${props.photographer}`}
                     href={photoFull}
                 >
