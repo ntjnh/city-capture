@@ -1,29 +1,15 @@
-// export default function Modal() {
-//     return (
-//         <div className="">
-//             <h3>modal</h3>
-//             <figure className="">
-//                 <img src="https://c2.staticflickr.com/4/3095/3211951613_5df2143bdb_b.jpg" alt="Canberra" />
-
-//                 <figcaption>
-//                     Canberra, Australia
-//                 </figcaption>
-//             </figure>
-//         </div>
-//     )
-// }
-
-import { useEffect, useState } from 'react'
 import Lightbox from 'yet-another-react-lightbox'
-import 'yet-another-react-lightbox/styles.css'
+import { MasonryPhotoAlbum } from 'react-photo-album'
+import 'react-photo-album/masonry.css'
+import { useEffect, useState } from 'react'
 
 const key = import.meta.env.VITE_API_KEY
 
-export default function Modal() {
+export default function Masonry({ photos }) {
     const endpoint = `https://api.unsplash.com/collections/XECQO9bpobo/photos?per_page=25&client_id=${key}`
-
-    const [open, setOpen] = useState(false)
+    
     const [collection, setCollection] = useState([])
+    const [index, setIndex] = useState(-1)
 
     useEffect(() => {
         async function fetchCollection() {
@@ -39,13 +25,19 @@ export default function Modal() {
                     height: p.height,
                     srcSet: [
                         {
-                            src: p.urls.regular, width: 1080, height: (p.height / p.width) * 1080
+                            src: p.urls.regular,
+                            width: 1080,
+                            height: (p.height / p.width) * 1080
                         },
                         {
-                            src: p.urls.small, width: 400, height: (p.height / p.width) * 400
+                            src: p.urls.small,
+                            width: 400,
+                            height: (p.height / p.width) * 400
                         },
                         {
-                            src: p.urls.thumb, width: 200, height: (p.height / p.width) * 200
+                            src: p.urls.thumb,
+                            width: 200,
+                            height: (p.height / p.width) * 200
                         }
                     ]
                 }))
@@ -59,16 +51,18 @@ export default function Modal() {
     }, [])
 
     return (
-        <section className="container py-4">
-            <button className="btn btn-outline-success" type="button" onClick={() => setOpen(true)}>
-                Open Lightbox
-            </button>
+        <>
+            <MasonryPhotoAlbum
+                photos={photos}
+                onClick={({ index: current }) => setIndex(current)}
+            />
 
             <Lightbox
-                open={open}
-                close={() => setOpen(false)}
+                index={index}
                 slides={collection}
+                open={index >= 0}
+                close={() => setIndex(-1)}
             />
-        </section>
+        </>
     )
 }

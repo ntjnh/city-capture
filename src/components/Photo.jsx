@@ -30,7 +30,8 @@ export default function Photo(props) {
                     data-title={`Photo by ${props.photographer}`}
                     href={photoFull}
                 >
-                    <img src={`${photoThumb}`} alt={`${props.city} photo by ${props.photographer}`} />
+                    {/* TODO: blur hash here */}
+                    <img src={photoThumb ? photoThumb : 'https://c2.staticflickr.com/4/3095/3211951613_5df2143bdb_b.jpg'} alt={`${props.city} photo by ${props.photographer}`} />
                 </a>
 
                 <span className="caption">{props.city}</span>

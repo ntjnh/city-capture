@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Modal from './components/Modal'
 import reloadMsnry from './msnry'
 import Footer from './components/Footer'
+import Masonry from './components/Masonry'
 
 function App() {
     // Call function after 5 seconds when .grid div is in the DOM
@@ -15,8 +16,9 @@ function App() {
         <div className="App">
             <Header />
             <Filter />
-            <Gallery />
+            {/* <Gallery /> */}
             {/* <Modal /> */}
+            <Masonry />
 
             <Footer />
         </div>
